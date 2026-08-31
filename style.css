@@ -4,6 +4,8 @@
     --background: #61777daa;
     --bright-orange: #d46013;
     --orange-dim: #eb6004b6;
+    --grey: #3f4241;
+    --grey-dim: #3f4241b3;
 
     --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'IBM Plex Sans', sans-serif;
@@ -47,18 +49,23 @@ h2 {
     text-transform: uppercase;
     font-size: 26px;
     font-family: var(--font-mono);
-    color: #3f4241;
+    color: var(--grey);
     text-shadow: 
-    0 0 9px #3f4241b3,
-    0 0 30px #3f4241b3;
+    0 0 9px var(--grey-dim),
+    0 0 30px var(--grey-dim);
     margin-bottom: 32px;
 }
 
-.lang {
-    max-width: 20%;
-    margin-left: 100px;
+p {
+    font-family: var(--font-display);
+    color: var(--grey);
+    font-size: 18px;
+}
+
+.box {
+    width: 250px;
     font-family: var(--font-body);
-    color: #3f4241;
+    color: var(--grey);
     font-size: 24px;
     border: 1.5px solid ;
     border-radius: 14px;
@@ -68,20 +75,22 @@ h2 {
     box-shadow: 0 0 22px #747575bd;
 }
 
-.lang-list {
+.box-list {
     list-style: none;
 }
 
-.lang-list li {
+.box-list li {
+    text-transform: uppercase;
+    font-family: var(--font-body);
     border-bottom: 1px solid;
     padding: 5px 0;
 }
 
-.lang-list li:last-child {
+.box-list li:last-child {
     border-bottom: none;
 }
 
-.lang-header {
+.box-header {
     padding: 6px 10px;
     border-bottom: 1px solid var(--background);
     background-color: #7f7e7eb7;
@@ -90,4 +99,21 @@ h2 {
     letter-spacing: 0.08em;
     color: #dedcdcc9;
     text-shadow:0 0 18px #d9dddce7;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 250px 720px;
+    gap: 48px;
+    justify-content: center;
+}
+
+.about-text {
+    border: 1.5px solid ;
+    border-radius: 14px;
+    background-color: #cbcbcb42;
+    overflow: hidden;
+    box-shadow: 0 0 22px #747575bd;
+    padding: 24px;
+    width: 600px;
 }
