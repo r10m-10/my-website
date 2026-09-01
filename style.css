@@ -119,3 +119,12 @@ p {
     padding: 24px;
     width: 600px;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 48px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
