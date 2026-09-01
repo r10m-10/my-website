@@ -99,6 +99,7 @@ p {
     letter-spacing: 0.08em;
     color: #dedcdcc9;
     text-shadow:0 0 18px #d9dddce7;
+    text-align: center;
 }
 
 .about {
@@ -106,6 +107,7 @@ p {
     grid-template-columns: 250px 720px;
     gap: 48px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .about-text {
