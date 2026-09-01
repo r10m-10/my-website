@@ -67,7 +67,7 @@ p {
     font-family: var(--font-body);
     color: var(--grey);
     font-size: 24px;
-    border: 1.5px solid ;
+    border: 1.5px solid var(--grey);
     border-radius: 14px;
     background-color: #cbcbcb42;
     overflow: hidden;
@@ -122,9 +122,30 @@ p {
 
 .projects {
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 400px 400px;
     gap: 48px;
     justify-content: center;
     margin-bottom: 50px;
 }
 
+.project-banner {
+    margin-bottom: 15px;
+}
+
+.project-card {
+    border: 1.5px solid var(--grey);
+    box-shadow: 0 0 22px #747575bd;
+    overflow: hidden;
+    border-radius: 14px;
+    background-color: #cbcbcb42;
+    font-family: var(--font-body);
+    color: var(--grey);
+}
+
+.project-desc {
+    text-align: center;
+}
+
+.project-desc p {
+    font-size: 16px;
+}
