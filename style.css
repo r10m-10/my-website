@@ -140,12 +140,19 @@ p {
     background-color: #cbcbcb42;
     font-family: var(--font-body);
     color: var(--grey);
+    text-decoration: none;
 }
 
 .project-desc {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .project-desc p {
     font-size: 16px;
+}
+
+.project-card:hover {
+    transform: scale(1.04);
+    transition: transform 0.2s ease;
 }
