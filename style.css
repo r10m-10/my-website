@@ -156,3 +156,24 @@ p {
     transform: scale(1.04);
     transition: transform 0.2s ease;
 }
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    padding: 48px 24px;
+    border-top: 1.5px solid var(--grey);
+}
+
+footer h2 {
+    font-family: var(--font-mono);
+    font-size: 18px;
+    color: var(--bright-orange);
+    text-decoration: none;
+    text-shadow: 
+    0 0 18px var(--orange-dim),
+    0 0 15px var(--orange-dim);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
